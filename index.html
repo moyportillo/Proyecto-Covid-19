@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css"/>
+    <link rel="stylesheet" href="./css/ol.css"/>
     <title>Covid-19 | HN</title>
 </head>
 <body>
@@ -20,14 +21,44 @@
             </nav>
     </header>
     <main>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-             Quod, quae velit. Soluta ab deserunt odio minus aliquid doloremque
-              fugit nemo obcaecati rerum qui! Incidunt officia voluptatum magnam
-               blanditiis quas sequi?</p>
-               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Quod, quae velit. Soluta ab deserunt odio minus aliquid doloremque
-                 fugit nemo obcaecati rerum qui! Incidunt officia voluptatum magnam
-                  blanditiis quas sequi?</p>
+        <section class="row">
+            <h2 class="col-sm-12">Mapa de Atencion para personas con COVID-19</h2>
+            <p class="col-sm-12">
+                Los siguientes puntos son lugares donde podra encontrar informacion o asistencias para las personas que estan infectados, presentan algun tipo de 
+                sintomas o necesiten de algun tipo de asistencia medica, esto para que pueda encontra la informacion 
+                util ante esta emergencia.
+            </p>
+        </section>
+        <section class="row">
+            <h3>Mapa</h3>
+            <div id="map"></div>
+        </section>
+        <section class="cardholder">
+             <div class="card_1">
+                <h3>HOSPITALES</h3>
+                <img src="imgs/hospital.png" alt="Hospitales"/>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus consequatur necessitatibus magnam molestiae sit tenetur voluptate blanditiis explicabo
+                         quasi laboriosam facilis aut dolorum alias quibusdam libero, dignissimos ipsam ipsa perferendis?</p>
+            </div>
+            <div class="card_1">
+                <h3>TRIAJE</h3>
+                <img src="imgs/carpa-para-camping.png" alt="Triajes"/>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus consequatur necessitatibus magnam molestiae sit tenetur voluptate blanditiis explicabo
+                         quasi laboriosam facilis aut dolorum alias quibusdam libero, dignissimos ipsam ipsa perferendis?</p>
+            </div>
+            <div class="card_1">
+                <h3>CENTROS DE CONTROL</h3>
+                <img src="imgs/quedarse-en-casa.png" alt="Centros de control"/>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus consequatur necessitatibus magnam molestiae sit tenetur voluptate blanditiis explicabo
+                         quasi laboriosam facilis aut dolorum alias quibusdam libero, dignissimos ipsam ipsa perferendis?</p>
+            </div>
+            <div class="card_1">
+                <h3>LABORATORIOS</h3>
+                <img src="imgs/quimica.png" alt="Laboratorio"/>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus consequatur necessitatibus magnam molestiae sit tenetur voluptate blanditiis explicabo
+                         quasi laboriosam facilis aut dolorum alias quibusdam libero, dignissimos ipsam ipsa perferendis?</p>
+            </div>
+        </section>
     </main>
     <footer>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -35,5 +66,7 @@
              fugit nemo obcaecati rerum qui! Incidunt officia voluptatum magnam
               blanditiis quas sequi?</p>
     </footer> 
+    <script text="text/javascript" src="js/controlador.js"></script>
+    <script text="text/javascript" src="js/ol.js"></script>
 </body>
 </html>
