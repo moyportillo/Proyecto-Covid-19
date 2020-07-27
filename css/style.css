@@ -60,7 +60,9 @@ p{
 
 h2{
     text-align: center;
+    font-size: 2.5em;
 }
+
 
 footer{
     display: flex;
@@ -71,6 +73,62 @@ footer{
     padding: 1em 1em;
     color: #ffffff;
 }
+
+footer .icon{
+    display: block;
+    font-size: 2em;
+    padding: 0.25em;
+    margin: 0.1em;
+    background-color: #FF5722;
+    color: #fff;
+    text-shadow: 1px 1px 2px #212121;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    box-shadow: 1px 1px 3px #212121;
+    transition: background-color 0.7s ease;
+    text-align: center;
+}
+
+footer .icon:hover {
+    background-color: #C8E6C9;
+    transition: background-color 0.7s ease;
+  }
+  footer .center {
+    text-align: center;
+    order: 1;
+    padding: 1em;
+  }
+  footer .social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    text-align: center;
+    order: 2
+  }
+
+  footer section:nth-child(1) {
+    order: 3;
+  }
+  footer nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 0px;
+    align-items: center;
+    justify-content: center;
+  }
+  footer nav ul li {
+    flex-basis: 50%;
+    text-align: center;
+  }
+  footer nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    line-height: 1.5;
+    text-align: center;
+  }
 
 .row{
     width: 100%;
@@ -158,7 +216,7 @@ img{
 
 [class*=card_] h3 {
     padding: 1em;
-    font-size: 35px;
+    font-size: 2em;
     margin-top: calc(-1em + 1px);
     margin-left: calc(-1em + 2px);
     margin-right: calc(-1em + 2px);
@@ -166,15 +224,14 @@ img{
     text-align: center;
   }
 
+  [class*=card_] img {
+    padding-right: 2em;
+    padding-bottom: 1em;
+    float: left;
+  }
+
 .card_1{
     width: 70%;
     margin: 1em;
 }
 
-#map {
-    height: 350px;
-    width: 840px;
-    text-align: left;
-    margin-left: 10px;
-    margin-right: 30px;
-}
