@@ -63,6 +63,11 @@ h2{
     font-size: 2.5em;
 }
 
+h3{
+    text-align: center;
+    font-size: 2em;
+}
+
 
 footer{
     display: flex;
@@ -216,7 +221,6 @@ img{
 
 [class*=card_] h3 {
     padding: 1em;
-    font-size: 2em;
     margin-top: calc(-1em + 1px);
     margin-left: calc(-1em + 2px);
     margin-right: calc(-1em + 2px);
@@ -233,5 +237,36 @@ img{
 .card_1{
     width: 70%;
     margin: 1em;
+}
+
+.contact{
+    background-color: #B3E5FC;
+    margin: 0px;
+    height: 272px;
+}
+
+.centrar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px;
+    text-align: center;
+    padding: 0.5em;
+    transform: translateY(50%);
+}
+
+.block-info{
+    display: block;
+    margin: 0px;
+    padding: 1em 1em 1em 2em;
+    text-align: center;
+}
+ ul{
+    display: block;
+    padding: 1em;
+    margin: 0px;
+    padding-bottom: 1em;
+    max-height: 100vh;
+    list-style: none;
 }
 
