@@ -240,7 +240,9 @@ img{
 }
 
 .contact{
-    background-color: #B3E5FC;
+    background-image: url("../imgs/barra.jpg");
+    background-position-x: 40%;
+    color: #333333;
     margin: 0px;
     height: 272px;
 }
@@ -255,6 +257,11 @@ img{
     transform: translateY(50%);
 }
 
+.Ubicaciones{
+    margin: 0px;
+    padding-top: 1em;
+    padding-bottom: 4em;
+}
 .block-info{
     display: block;
     margin: 0px;
