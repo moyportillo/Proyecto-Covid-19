@@ -160,8 +160,9 @@ img{
     padding: 1em;
     font-size: 35px;
     margin-top: calc(-1em + 1px);
-    margin-left: calc(-1em + 3px);
-    margin-right: calc(-1em + 3px);
+    margin-left: calc(-1em + 2px);
+    margin-right: calc(-1em + 2px);
+    margin-bottom: 0px;
     text-align: center;
   }
 
