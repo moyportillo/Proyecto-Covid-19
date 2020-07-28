@@ -50,7 +50,7 @@ header nav ul li a:hover{
 .hamburguer{
     display: flex;
     position: absolute;
-    left: 20%;
+    left: 15%;
     top: 26px;
     box-sizing: border-box;
     width: 64px;
@@ -315,5 +315,122 @@ img{
       100% {
         transform: rotate(0deg);
       }
+  }
+
+  @media (min-width:720px){
+        .hamburguer{
+            display: none;
+        }
+
+        header h1{
+            display: inline-block;
+            text-align: left;
+        }
+
+        header nav{
+            display: inline-block;
+            text-align: right;
+        }
+
+        header nav ul{
+            display: inline-block;
+        }
+
+        header nav ul li{
+            display: inline-block;
+        }
+
+        header nav ul li a{
+            display: inline-block;
+        }
+
+        header nav ul.hidden{
+            max-width: 100vh;
+        }
+
+        [class*=card_] img {
+            display: block;
+            padding-right: 2em;
+            padding-bottom: 1em;
+          }
+
+        .card_1 {
+            width: 40%;
+        }
+
+  }
+
+  @media(min-width: 1050px){
+    
+    header h1{
+        display: inline-block;
+        text-align: center;
+        width: calc(100% - 800px);
+    }
+
+    header nav{
+        display: inline-block;
+        text-align: right;
+        width: auto;
+    }
+
+    header nav ul{
+        display: inline-block;
+    }
+
+    header nav ul li{
+        display: inline-block;
+        font-size: 1.5em;
+    }
+
+    header nav ul li a{
+        display: inline-block;
+    }
+
+    header nav ul.hidden{
+        max-width: 100vh;
+    }
+
+    footer{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #0288D1;
+        padding: 1.5em 1em;
+        color: #fff;
+    }
+
+    footer section{
+        min-width: 30%;
+    }
+
+    footer nav ul {
+        padding-left: 40%;
+    }
+
+    footer nav ul li{
+        flex-basis: 100%;
+        text-align: left;
+    }
+
+    footer section:nth-child(1){
+        order: 1;
+    }
+
+    footer .center{
+        order: 2;;
+    }
+
+    footer .social{
+        flex-direction: row;
+        text-align: center;
+        order: 3;
+    }
+
+    .card_1 {
+        width: 40%;
+    }
+
   }
 
