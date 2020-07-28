@@ -47,6 +47,28 @@ header nav ul li a:hover{
     transition: background-color 0.7s ease, color 0.7s ease;
 }
 
+.hamburguer{
+    display: flex;
+    position: absolute;
+    left: 20%;
+    top: 26px;
+    box-sizing: border-box;
+    width: 64px;
+    height: 64px;
+    padding-top: 1px;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+    background-image: url("../imgs/virus.png");
+    transform: rotate(0deg);
+    transition: transform 0.7s ease;
+    
+}
+
+.move-menu{
+    animation: Movement 6s infinite;
+}
+
 main {
     background-color: #ffffff;
     color: #212121;
@@ -276,4 +298,22 @@ img{
     max-height: 100vh;
     list-style: none;
 }
+
+@keyframes Movement {
+    0% {
+        transform: rotate(0deg);
+      }
+    
+      25% {
+        transform: rotate(45deg);
+      }
+    
+      75% {
+        transform: rotate(-45deg);
+      }
+    
+      100% {
+        transform: rotate(0deg);
+      }
+  }
 
