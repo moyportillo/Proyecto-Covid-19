@@ -282,13 +282,12 @@ img{
 .Ubicaciones{
     margin: 0px;
     padding-top: 1em;
-    padding-bottom: 4em;
+    padding-bottom: 8em;
 }
-.block-info{
+
+.destinos{
     display: block;
-    margin: 0px;
-    padding: 1em 1em 1em 2em;
-    text-align: center;
+
 }
  ul{
     display: block;
@@ -357,10 +356,62 @@ img{
         .card_1 {
             width: 40%;
         }
+        
+        .col-md-1{
+            flex-basis: calc(100%/12);
+        }
+        
+        .col-md-2{
+            flex-basis: calc(100%/6);
+        }
+        
+        .col-md-3{
+            flex-basis: calc(100%/4);
+        }
+        
+        .col-md-4{
+            flex-basis: calc(100%/3);
+        }
+        
+        .col-md-5{
+            flex-basis: calc(100%/12 * 5);
+        }
+        
+        .col-md-6{
+            flex-basis: calc(100%/2);
+        }
+        
+        .col-md-7{
+            flex-basis: calc(100%/12 * 7);
+        }
+        
+        .col-md-8{
+            flex-basis: calc(100%/12 * 8);
+        }
+        
+        .col-md-9{
+            flex-basis: calc(100%/12 * 9);
+        }
+        
+        .col-md-10{
+            flex-basis: calc(100%/12 * 10);
+        }
+        
+        .col-md-11{
+            flex-basis: calc(100%/12 * 11);
+        }
+        
+        .col-md-12{
+            flex-basis: 100%;
+        }
+        
+        img{
+            max-width: 100%;
+        }
 
   }
 
-  @media(min-width: 1050px){
+  @media(min-width: 1020px){
     
     header h1{
         display: inline-block;
@@ -430,6 +481,26 @@ img{
 
     .card_1 {
         width: 40%;
+    }
+
+    .principal{
+        padding: 5em 7em 5em 7em;
+    }
+
+    .principal h2{
+        display: block;
+        text-align: center;
+        font-size: 5em;
+    }
+
+    .principal p{
+        font-size: 1.3em;
+        font-style: italic;
+    }
+
+    .Ubicaciones{
+        margin: 0px;
+        padding: 3em 10em 5em 10em;
     }
 
   }
