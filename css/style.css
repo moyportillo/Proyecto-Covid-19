@@ -485,6 +485,12 @@ img{
 
     .principal{
         padding: 5em 7em 5em 7em;
+        background-image: url("../imgs/hero.jpg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        color: #000000;
     }
 
     .principal h2{
