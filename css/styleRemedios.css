@@ -1,7 +1,7 @@
 body{
     margin: 0px;
     padding: 0px;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 
 header{
@@ -79,29 +79,101 @@ header nav ul li a:hover{
 .move-menu{
     animation: Movement 6s infinite;
 }
-
-main {
-    background-color: #ffffff;
-    color: #212121;
-    padding: 0px;
-    line-height: 1.5;
+/*-----------------------------------------------------------------*/
+.bloque1{
+    position: relative;
 }
-
-p{
+.titulo{
+    position: absolute;
+    width: 70%;
     text-align: justify;
+    color: #212121;
+    background-color: rgba(255, 255, 255, 0.5);
+    top: 10vw;
+    left: 3vw;
+    padding: 1.5em;
+    box-shadow: -10px -10px 8px #a8a8a8;
 }
-
-h2{
+.bloque1 picture,
+.bloque1 img {
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+}
+#advertencia{
     text-align: center;
-    font-size: 2.5em;
+    color: #757575;
 }
-
-h3{
-    text-align: center;
-    font-size: 2em;
+.contenido{
+    width: 100%;
+    max-width: 1024px;
+    margin: auto;
+    margin-bottom: 8%;
+    display: grid;
+    grid-template-columns: 1fr, 1fr, 1fr;
+    grid-template-rows: auto;
+    gap: 30px;
+    grid-template-areas:"imgRemedio1  imgRemedio2 ImgRemedio3"
+                         "remedio1    remedio2    remedio3"
+                         "imgRemedio4 imgRemedio5 ImgRemedio6"
+                         "remedio4    remedio5    remedio6";
 }
-
-
+.contenido picture img{
+    width: 100%;
+    height: auto;
+}
+.contenido .remedio1,
+.contenido .remedio2,
+.contenido .remedio3,
+.contenido .remedio4,
+.contenido .remedio5,
+.contenido .remedio6
+{
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 15px;
+    text-align: justify;
+    font-size: 14px;
+    color: #575757;
+    box-shadow: 0px 8px 8px #0288D1;
+}
+.contenido .remedio1{
+    grid-area: remedio1;
+}
+.contenido .remedio2{
+    grid-area: remedio2;
+}
+.contenido .remedio3{
+    grid-area: remedio3;
+}
+.contenido .remedio4{
+    grid-area: remedio4;
+}
+.contenido .remedio5{
+    grid-area: remedio5;
+}
+.contenido .remedio6{
+    grid-area: remedio6;
+}
+.contenido .imgRemedio1{
+    grid-area: imgRemedio1;
+}
+.contenido .imgRemedio2{
+    grid-area: imgRemedio2;
+}
+.contenido .imgRemedio3{
+    grid-area: imgRemedio3;
+}
+.contenido .imgRemedio4{
+    grid-area: imgRemedio4;
+}
+.contenido .imgRemedio5{
+    grid-area: imgRemedio5;
+}
+.contenido .imgRemedio6{
+    grid-area: imgRemedio6;
+}
+/*-----------------------------------------------------*/
 footer{
     display: flex;
     flex-direction: column;
@@ -168,146 +240,6 @@ footer .icon:hover {
     text-align: center;
   }
 
-.row{
-    width: 100%;
-    display: flex;
-    box-sizing: border-box;
-    padding: 0.5em 1.5em;
-    margin: 0px;
-    flex-wrap: wrap;
-}
-
-[class*=col-]{
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
-    box-sizing: border-box;
-    padding: 0.5em 0.5em;
-    margin: 0px;
-}
-
-.col-sm-1{
-    flex-basis: calc(100%/12);
-}
-
-.col-sm-2{
-    flex-basis: calc(100%/6);
-}
-
-.col-sm-3{
-    flex-basis: calc(100%/4);
-}
-
-.col-sm-4{
-    flex-basis: calc(100%/3);
-}
-
-.col-sm-5{
-    flex-basis: calc(100%/12 * 5);
-}
-
-.col-sm-6{
-    flex-basis: calc(100%/2);
-}
-
-.col-sm-7{
-    flex-basis: calc(100%/12 * 7);
-}
-
-.col-sm-8{
-    flex-basis: calc(100%/12 * 8);
-}
-
-.col-sm-9{
-    flex-basis: calc(100%/12 * 9);
-}
-
-.col-sm-10{
-    flex-basis: calc(100%/12 * 10);
-}
-
-.col-sm-11{
-    flex-basis: calc(100%/12 * 11);
-}
-
-.col-sm-12{
-    flex-basis: 100%;
-}
-
-img{
-    max-width: 100%;
-}
-
-.cardholder{
-    margin-top: 1em;
-    padding-top: 2em;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    background-color: #ecedef;;
-}
-
-[class*=card_]{
-    box-sizing: border-box;
-    padding: 1em;
-}
-
-[class*=card_] h3 {
-    padding: 1em;
-    margin-top: calc(-1em + 1px);
-    margin-left: calc(-1em + 2px);
-    margin-right: calc(-1em + 2px);
-    margin-bottom: 0px;
-    text-align: center;
-  }
-
-  [class*=card_] img {
-    padding-right: 2em;
-    padding-bottom: 1em;
-    float: left;
-  }
-
-.card_1{
-    width: 70%;
-    margin: 1em;
-}
-
-.contact{
-    background-image: url("../imgs/barra.jpg");
-    background-position-x: 40%;
-    color: #333333;
-    margin: 0px;
-    height: 272px;
-}
-
-.centrar{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0px;
-    text-align: center;
-    padding: 0.5em;
-    transform: translateY(50%);
-}
-
-.Ubicaciones{
-    margin: 0px;
-    padding-top: 1em;
-    padding-bottom: 8em;
-}
-
-.destinos{
-    display: block;
-
-}
- ul{
-    display: block;
-    padding: 1em;
-    margin: 0px;
-    padding-bottom: 1em;
-    max-height: 100vh;
-    list-style: none;
-}
 
 @keyframes Movement {
     0% {
@@ -327,7 +259,7 @@ img{
       }
   }
 
-  @media (min-width:720px){
+  @media (min-width:768px){
         .hamburguer{
             display: none;
         }
@@ -356,68 +288,6 @@ img{
 
         header nav ul.hidden{
             max-width: 100vh;
-        }
-
-        [class*=card_] img {
-            display: block;
-            padding-right: 2em;
-            padding-bottom: 1em;
-          }
-
-        .card_1 {
-            width: 40%;
-        }
-        
-        .col-md-1{
-            flex-basis: calc(100%/12);
-        }
-        
-        .col-md-2{
-            flex-basis: calc(100%/6);
-        }
-        
-        .col-md-3{
-            flex-basis: calc(100%/4);
-        }
-        
-        .col-md-4{
-            flex-basis: calc(100%/3);
-        }
-        
-        .col-md-5{
-            flex-basis: calc(100%/12 * 5);
-        }
-        
-        .col-md-6{
-            flex-basis: calc(100%/2);
-        }
-        
-        .col-md-7{
-            flex-basis: calc(100%/12 * 7);
-        }
-        
-        .col-md-8{
-            flex-basis: calc(100%/12 * 8);
-        }
-        
-        .col-md-9{
-            flex-basis: calc(100%/12 * 9);
-        }
-        
-        .col-md-10{
-            flex-basis: calc(100%/12 * 10);
-        }
-        
-        .col-md-11{
-            flex-basis: calc(100%/12 * 11);
-        }
-        
-        .col-md-12{
-            flex-basis: 100%;
-        }
-        
-        img{
-            max-width: 100%;
         }
 
   }
@@ -490,35 +360,57 @@ img{
         order: 3;
     }
 
-    .card_1 {
-        width: 40%;
-    }
-
-    .principal{
-        padding: 5em 7em 5em 7em;
-        background-image: url("../imgs/hero.jpg");
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-        color: #000000;
-    }
-
-    .principal h2{
-        display: block;
-        text-align: center;
-        font-size: 5em;
-    }
-
-    .principal p{
-        font-size: 1.3em;
-        font-style: italic;
-    }
-
-    .Ubicaciones{
-        margin: 0px;
-        padding: 3em 10em 5em 10em;
-    }
-
   }
+
+  
+
+
+@media screen and (max-width: 768px) and (min-width:460px){
+    .titulo{
+        width: 80%;
+        top: 8vw;
+    }
+    .contenido{
+        grid-template-columns: 1fr, 1fr;
+        grid-template-rows: auto;
+        gap: 15px;
+        grid-template-areas:"imgRemedio1  imgRemedio2"
+                            "remedio1    remedio2"
+                            "imgRemedio3 imgRemedio4"
+                            "remedio3    remedio4"
+                            "imgRemdio5  imgRemedio6"
+                            "remedio5    remedio6";
+    }
+}
+
+@media screen and (max-width: 460px){
+    .titulo{
+        width: 85%;
+        font-size: 9px;
+        top: 8vw;
+        padding: 1em;
+        box-shadow: -5px -5px 4px #a8a8a8; 
+    }
+    #advertencia{
+        font-size: 10px;
+    }
+    .contenido{
+        font-size: 8px;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        gap: 20px;
+        grid-template-areas:"imgRemedio1"
+                            "remedio1"
+                            "imgRemedio2"
+                            "remedio2" 
+                            "imgRemedio3"  
+                            "remedio3"
+                            "imgRemedio4"
+                            "remedio4"    
+                            "imgRemedio5"
+                            "remedio5" 
+                            "imgRemdio"   
+                            "remedio6";
+    }
+}
 
