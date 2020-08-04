@@ -1,0 +1,36 @@
+.accordion {
+  background-color: white;
+  color: black;
+  cursor: pointer;
+  padding: 15px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 20px;
+  transition: 0.4s;
+}
+
+.active, .accordion:hover {
+  background-color: #8c8cd3 ; 
+}
+
+.panel {
+  padding: 0 18px;
+  display: none;
+  background-color: #8c8cd3;
+  overflow: hidden;
+  
+}
+
+.panel p {
+  color: black;
+  font-size: 17px;
+}
+
+.panel ul li{
+  color:black;
+  font-size:17px;
+  list-style-type: disc;
+}
+

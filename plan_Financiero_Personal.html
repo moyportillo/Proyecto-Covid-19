@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css"/>
+    <title>Plan Financiero Personal</title>
+</head>
+<body>
+    <header>
+        <h1><a href="index.html">COVID-19 HN</a></h1>
+        <nav>
+            <ul class="hidden">
+                <li><a href="Tratamientos.html">Informacion</a></li>
+                <li><a href="Mapa_Lugares.html">Mapas</a></li>
+                <li><a href="plan_Financiero_Personal.html">Financiero</a></li>
+                <li><a>Donaciones</a></li>
+        </ul>
+        <section class="hamburguer move-menu">
+            <div></div>
+        </section>
+            </nav>
+    </header>
+    <main>
+        <section class="presentacion">
+            <h2>Plan Finaciero Personal</h2>
+            <p>Este Plan financiero personal esta creado para poder ofrecerle al hondureño, una organización con los ingresos monetarios en sus hogares, en donde el fin es poder disolver los gastos innecesarios y poder tener un mejor control de los fluidos de efectivos para cada persona.</p>
+        </section>
+        <section class="contact">
+            <h3 class="centrar">Información Financiera</h3>
+        </section>
+        <section class="row">
+            <p class="col-sm-12">En los siguientes campos le solicitamos que proporcione la información personal de sus estados finacnieros. Favor rellenar todos los campos que usted necesite y los demás dejarlos en blanco.</p>
+            <p class="col-sm-12">Recuerde que es una totalidad de efectivos mensuales.</p>
+        </section>
+            <form action="plan_Financiero_Personal.html" method="GET">
+                <fieldset>
+                    <legend>Datos Generales</legend>
+                    <label for="txtnombre">Nombre completo: </label>
+                    <input type="text" name="txtNombre" id="txtNombre" placeholder="Nombre completo">
+                    <div id="nameError" class="error"></div>
+                    <label for="txtCantidad">Personas en su hogar: </label>
+                    <input type="number" name="txtCantidad" id="txtCantidad" placeholder="Personas que viven con usted.">
+                    <div id="personError" class="error"></div>
+                    <label for="txtIngreso">Ingreso de Efectivo(Remuneracion): </label>
+                    <input type="number" name="txtEfectivo" id="txtEfectivo" placeholder="Remuneracion Mensual">
+                    <div id="efectivoError" class="error"></div>
+                    <label for="txtColaboradores">Ingreso de otros Colaboradores: </label>
+                    <input type="number" name="txtColaboradores" id="txtColaboradores" placeholder="Aportación de otras personas">
+                    <div id="colaboracionError" class="error"></div>
+                    <label for="txtOtros">Otros Ingresos: </label>
+                    <input type="number" name="txtOtros" id="txtOtros" placeholder="Ingresos Extras en el Hogar">
+                    <div id="otrosError" class="error"></div>
+                </fieldset>
+                <fieldset>
+                    <legend>Deudas, Pagos o Pasivos</legend>
+                    <label for="txtServicio">Servicios Públicos: </label>
+                    <input type="number" name="txtServicio" id="txtServicio" placeholder="Energía, Agua, Teléfono)">
+                    <div id="servicioError" class="error"></div>
+                    <label for="txtCable">Cable/Internet: </label>
+                    <input type="number" name="txtCable" id="txtCable" placeholder="Cable/Internet">
+                    <div id="cableError" class="error"></div>
+                    <label for="txtAlimentos">Alimentos: </label>
+                    <input type="number" name="txtAlimentos" id="txtAlimentos" placeholder="Alimentos">
+                    <div id="alimentoError" class="error"></div>
+                    <label for="txtDeudas">Deudas/Prestamos: </label>
+                    <input type="number" name="txtDeudas" id="txtDeudas" placeholder="Deudas/prestamos">
+                    <div id="deudasError" class="error"></div>
+                    <label for="txtAlquiler">Alquiler de Casa/Apartamento/Cuarto</label> 
+                    <input type="number" name="txtAlquiler" id="txtAlquiler" placeholder="Pago de alquiler">
+                    <div id="alquilerError" class="error"></div>
+                    <label for="txtSalud">Salud/Medicina</label>
+                    <input type="number" name="txtSalud" id="txtSalud" placeholder="Salud/Medicina">
+                    <div id="saludError" class="error"></div>
+                    <label for="txtCombustible">Combustible/Transporte: </label>
+                    <input type="number" name="txtCombustible" id="txtCombustible" placeholder="Combustible/Transporte">
+                    <div id="combustibleError" class="error"></div>
+                    <label for="txtEducacion">Educación: </label>
+                    <input type="number" name="txtEducacion" id="txtEducacion" placeholder="Pago Universidad/Escuela/Curso">
+                    <div id="educacionError" class="error"></div>
+                    <label for="txtGastos">Otros Gastos:</label>
+                    <input type="number" name="txtGastos" id="txtGastos" placeholder="Otros Gastos">
+                    <div id="gastosError" class="error"></div>
+                </fieldset>
+                <div class="centrar_btn">
+                    <button id="btnCalcular" class="btn">Calcular</button>
+                </div>
+            </form>
+        <section>
+
+
+        </section>
+    </main>
+    <footer>
+        <section>
+            <nav>
+                <ul>
+                    <li><a href="Protocolos_de_Prevencion.html">Informacion</a></li>
+                    <li><a href="">Mapas</a></li>
+                    <li><a>Financiero</a></li>
+                    <li><a href="Ayudaenlinea.html">Donaciones</a></li>
+                    <li><a>Contactenos</a></li>
+                </ul>
+            </nav>
+        </section>
+        <section class="center">
+            <span>Derechos Reservados &copy; 2020</span>
+        </section>
+        <section class="social">
+            <a href class="icon"><img src="imgs/facebook.png" alt="Icon facebook"></a>
+            <a href class="icon"><img src="imgs/twitter.png" alt="Icon Twitter"></a>
+            <a href class="icon"><img src="imgs/instagram.png" alt="Icon Instagram"></a>
+            <a href class="icon"><img src="imgs/gato.png" alt="Icon Github"></a>
+        </section>
+    </footer> 
+    <script src="js/controlador.js"></script>
+</body>
+</html>
