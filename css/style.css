@@ -391,6 +391,11 @@ input::placeholder{
     box-shadow: 2px 2px 8px #333333;
     
 }
+.error{
+    color: #F44336;
+    font-weight: bold;
+    padding: 0.5em;
+}
 
 
 @keyframes Movement {
@@ -523,6 +528,13 @@ input::placeholder{
             font-size: 3em;
         }
 
+        form{
+            display: block;
+            margin: 0px;
+            padding: 2em 6em 3em 6em;
+        
+        }
+
   }
 
   @media(min-width: 1020px){
@@ -629,63 +641,5 @@ input::placeholder{
         padding: 2em 10em 3em 10em;
     
     }
-    
-  /*  fieldset{
-        margin: 0px;
-        margin-bottom: 2em;
-        padding-bottom: 2em;
-        border-radius: 5px;
-    }
-    
-    
-    legend {
-        font-size: 1.5em;
-        font-weight: bold;
-    }
-    
-    label {
-        display: block;
-        margin-top: 1em;
-        box-sizing: border-box;
-        min-width: 100%;
-        font-weight: bold;
-    }
-    
-    input {
-        box-sizing: border-box;
-        min-width: 100%;
-        border: 1px solid #757575;
-        border-radius: 5px;
-        box-shadow: 2px 2px 5px #3333;
-        padding: 0.5em;
-        font-size: 1em;
-    }
-    
-    input::placeholder{
-        color: #757575;
-        font-style: italic;
-    }
-    
-    .centrar_btn{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin: 0px;
-        text-align: center;
-        padding: 2em;
-    }
-    
-    .btn {
-        background-color: #FF5722;
-        color: #fff;
-        padding: 1em 1.5em;
-        font-weight: bold;
-        font-size: 1em;
-        border: 1px solid #757575;
-        border-radius: 10px;
-        box-shadow: 2px 2px 8px #333333;
-        
-    }*/
-
   }
 
