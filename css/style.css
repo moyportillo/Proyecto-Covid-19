@@ -397,6 +397,36 @@ input::placeholder{
     padding: 0.5em;
 }
 
+.areaResultado h3{
+    margin: 0px;
+    padding: 1em;
+}
+
+[class*=efectivo_] {
+    flex-basis: 100%;
+    padding: 1em;
+}
+.efectivo_1{
+    background-color: #8BC34A;
+    
+}
+
+.efectivo_2{
+    background-color: #F44336;
+}
+
+.efectivo_3{
+    background-color: #00BCD4;
+}
+
+.efectivo_4{
+    background-color: #009688;
+}
+
+.hide{
+    display: none;
+}
+
 
 @keyframes Movement {
     0% {

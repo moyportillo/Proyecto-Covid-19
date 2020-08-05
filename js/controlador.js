@@ -110,19 +110,27 @@ function txtCantidad_onchange(e){
 function txtEfectivo_onchange(e){
     var txtEfectivoToValidate = e.target.value;
 
-    if(!validDouble.test(txtEfectivoToValidate)){
-        txtEfectivoError.innerHTML = "No es un numero real.";
+    if(txtEfectivoToValidate == 0){
+        txtEfectivoError.innerHTML = "Campo Requerido."
         txtEfectivo.focus();
     }
     else{
-        txtEfectivoError.innerHTML = "";
-        if(txtEfectivoToValidate > 49 && txtEfectivoToValidate < 999999999){
-            txtEfectivoError.innerHTML = "";
+        if(!validDouble.test(txtEfectivoToValidate)){
+            txtEfectivoError.innerHTML = "No es un numero real.";
+            txtEfectivo.focus();
         }
         else{
-            txtEfectivoError.innerHTML = "Salario entre 50 a 999999999";
+            txtEfectivoError.innerHTML = "";
+            if(txtEfectivoToValidate > 49 && txtEfectivoToValidate < 999999999){
+                txtEfectivoError.innerHTML = "";
+            }
+            else{
+                txtEfectivoError.innerHTML = "Salario entre 50 a 999999999";
+            }
         }
     }
+
+    
 }
 
 function txtColaboracion_onchange(e){
@@ -134,16 +142,16 @@ function txtColaboracion_onchange(e){
     }
     else{
         txtColaboracionError.innerHTML = "";
-        if(txtColaboracionToValidate > 49 && txtColaboracionToValidate < 999999999){
+        if(txtColaboracionToValidate >= 0 && txtColaboracionToValidate < 999999999){
             txtColaboracionError.innerHTML = "";
         }
         else{
-            txtColaboracionError.innerHTML = "Efectivo entre 50 a 999999999";
+            txtColaboracionError.innerHTML = "El dato tiene que ser mayor a 0";
         }
     }
 }
 
-function txtColaboracion_onchange(e){
+function txtOtros_onchange(e){
     var txtOtrosToValidate = e.target.value;
 
     if(!validDouble.test(txtOtrosToValidate)){
@@ -152,15 +160,34 @@ function txtColaboracion_onchange(e){
     }
     else{
         txtOtrosError.innerHTML = "";
-        if(txtOtrosToValidate > 49 && txtOtrosToValidate < 999999999){
+        if(txtOtrosToValidate >= 0 && txtOtrosToValidate < 999999999){
             txtOtrosError.innerHTML = "";
         }
         else{
-            txtOtrosError.innerHTML = "Efectivo entre 50 a 999999999";
+            txtOtrosError.innerHTML = "El dato tiene que ser mayor a 0";
         }
     }
 }
      
+$("#btnCalcular").click(function(e){
+    e.preventDefault();
+    e.stopPropagation();
+    $("form").hide("0.5s");
+    $(".row").hide("0.5s");
+    $(".show").hide("0.5s");
+    $(".hide").show("slow").focus();
+});
+
+$("#btnRefresh").click(function(e){
+    e.preventDefault();
+    e.stopPropagation();
+    $(".hide").hide("slow");
+    $("form").show("slow");
+    $(".row").show("slow");
+    $(".show").show("slow");
+});
+
+
 
 
  
