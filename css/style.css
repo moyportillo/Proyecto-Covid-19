@@ -397,6 +397,14 @@ input::placeholder{
     padding: 0.5em;
 }
 
+.responsive{
+    display: block;
+    color: #fff;
+    font-weight: bold;
+    text-align: center;
+    font-size: 3em;
+}
+
 .areaResultado h3{
     margin: 0px;
     padding: 1em;
@@ -423,8 +431,46 @@ input::placeholder{
     background-color: #009688;
 }
 
+.efectivo_4 ul li{
+    list-style: circle;
+}
+
 .hide{
     display: none;
+}
+
+.circuleActivo{
+    background-color: #DCEDC8;
+    color: #4c7c14;
+    border-radius: 50%;
+    box-shadow: 2px 2px 5px #333333;
+    margin: 1em 1.5em;
+    padding: 1em;
+}
+
+.circulePasivo{
+    background-color: #FFCDD2;
+    color: #7c1414;
+    border-radius: 50%;
+    box-shadow: 2px 2px 5px #333333;
+    margin: 1em 1.5em;
+    padding: 1em;
+}
+
+.expresion{
+    display: block;
+    color: #212121;
+    text-align: center;
+    font-size: 3em;
+    padding: 0.5em;
+    font-weight: bold;
+}
+
+.tips{
+    display: block;
+    padding: 1em;
+    font-size: 1em;
+    text-align: justify;
 }
 
 

@@ -35,7 +35,7 @@
             <p class="col-sm-12">En los siguientes campos le solicitamos que proporcione la información personal de sus estados finacnieros. Favor rellenar todos los campos que usted necesite y los demás dejarlos en blanco.</p>
             <p class="col-sm-12">Recuerde que es una totalidad de efectivos mensuales.</p>
         </section>
-            <form action="plan_Financiero_Personal.html" method="GET">
+            <form action="#" method="GET">
                 <fieldset>
                     <legend>Datos Generales</legend>
                     <label for="txtnombre">Nombre completo: </label>
@@ -94,19 +94,20 @@
             <section class="areaResultado hide">
                 <div class="efectivo_1">
                     <h3>Entrada de Efectivo</h3>
-                    <div id="calculoActivo"></div>
-                    <div></div>
+                    <span id="totalActivo" class="responsive"></span>
+                    <div id="porcentaje_Activo" class="responsive circuleActivo"></div>
                 </div>
                 <div class="efectivo_2">
                     <h3>Salida de Efectivo</h3>
-                    <div></div>
-                    <div></div>
+                    <span id="totalPasivo" class="responsive"></span>
+                    <div id="porcentaje_Pasivo" class="responsive circulePasivo"></div>
                 </div>
                 <div class="efectivo_3">
                     <h3>CONCLUSIONES</h3>
-                    <div></div>
-                    <div></div>
-                    <div></div>
+                    <div id="exprecion" class="expresion"></div>
+                    <div id="mensaje" class="tips"></div>
+                    <div id="resultante" class="responsive"></div>
+                    <div id="utilidad" class="tips"></div>
                 </div>
                 <div class="efectivo_4">
                     <h3>CONSEJOS</h3>

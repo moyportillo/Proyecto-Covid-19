@@ -168,26 +168,67 @@ function txtOtros_onchange(e){
         }
     }
 }
-     
-$("#btnCalcular").click(function(e){
-    e.preventDefault();
-    e.stopPropagation();
-    $("form").hide("0.5s");
-    $(".row").hide("0.5s");
-    $(".show").hide("0.5s");
-    $(".hide").show("slow").focus();
-});
+    
+        $('#btnCalcular').click(function(e){
+            e.preventDefault();
+            e.stopPropagation();
+            $("form").hide("0.5s");
+            $(".row").hide("0.5s");
+            $(".show").hide("0.5s");
+            $(".hide").show("slow");
+            $(function(){
+                var efectivo = $("#txtEfectivo").val();
+            var colaboradores = $("#txtColaboradores").val();
+            var otros = $("#txtOtros").val();
 
-$("#btnRefresh").click(function(e){
-    e.preventDefault();
-    e.stopPropagation();
-    $(".hide").hide("slow");
-    $("form").show("slow");
-    $(".row").show("slow");
-    $(".show").show("slow");
-});
+            var servicios = $("#txtServicio").val();
+            var cable = $("#txtCable").val();
+            var alimento = $("#txtAlimentos").val();
+            var deudas = $("#txtDeudas").val();
+            var alquiler = $("#txtAlquiler").val();
+            var salud = $("#txtSalud").val();
+            var gas = $("#txtCombustible").val();
+            var educacion = $("#txtEducacion").val();
+            var gastos = $("#txtGastos").val();
+            var resultado = parseFloat(efectivo) + parseFloat(colaboradores) + parseFloat(otros);
+            $("#totalActivo").text("Lps. " +resultado.toFixed(2));  
 
+            var resultado2 = parseFloat(servicios) + parseFloat(cable) + parseFloat(alimento) + parseFloat(deudas) + parseFloat(alquiler) + parseFloat(salud) + parseFloat(gas) + parseFloat(educacion) + parseFloat(gastos);
+            $("#totalPasivo").text("Lps. " +resultado2.toFixed(2));  
+            
+            var Total = resultado + resultado2;
+            var porcentajeActivo = (resultado * 100) / Total;
+            var porcentajePasivo = (resultado2 * 100) / Total;
+            $("#porcentaje_Activo").text(porcentajeActivo.toFixed(2)+ "%");
+            $("#porcentaje_Pasivo").text(porcentajePasivo.toFixed(2)+ "%");
 
-
-
- 
+            var resultante = resultado - resultado2;
+            $("#resultante").text("Lps. " +resultante.toFixed(2));
+            if(resultante > 0){
+                $("#utilidad").text("Esta es la UTILIDAD resultante, lo cual podremos ahorrar para el siguiente mes o invertirlo para poder generar mas efectivo de entrada.");
+            }
+            else{
+                $("#utilidad").text("El resultante es una PERDIDA de efectivo, lo cual muestra que sus deudas son mayores que los ingresos de efectivos. Favor Revisar la sección de CONSEJO para poder economizar sus fluidos de efectivos");
+            }
+            if(porcentajeActivo > 10){
+                $("#exprecion").text("Excelente");
+                $("#mensaje").text("Entradas: Las entradas son excelentes por que sobre pasa  mas del 60% de los ingresos Salidas: Las salidas son menores de los 50% y hace que sea sostenible los gastos del hogar.");
+            }else if(porcentajeActivo < 60 && porcentajeActivo > 50){
+                $("#exprecion").text("Aceptable");
+                $("#mensaje").text("Entradas: Las entradas estan algo sostenibles, se mantiene en un margen del 50% pero es necesario mejorar las entradas de efectivo: Las salidas son menores de los 50% y hace que sea sostenible los gastos del hogar.");
+            }
+            else{
+                $("#exprecion").text("No Aceptable");
+                $("#mensaje").text("La parte de la deuda o pasivos es mayor y esto hace que tengamos perdidas y no podamos sostener los pagos y deudas, necesitamos hacer un plan de levantamiento de la economia para poder siempre mantener utilidades al final del mes.");
+            }
+            });
+        });
+        
+        $("#btnRefresh").click(function(e){
+            e.preventDefault();
+            e.stopPropagation();
+            $(".hide").hide("slow");
+            $("form").show("slow");
+            $(".row").show("slow");
+            $(".show").show("slow");
+        });
