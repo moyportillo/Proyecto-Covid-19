@@ -17,6 +17,11 @@ header h1{
     text-align: center;
 }
 
+header h1 a{
+    text-decoration: none;
+    color: #fff;
+}
+
 header nav ul{
     display: block;
     padding: 0px;
