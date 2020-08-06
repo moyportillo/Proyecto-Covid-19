@@ -210,25 +210,32 @@ function txtOtros_onchange(e){
             else{
                 $("#utilidad").text("El resultante es una PERDIDA de efectivo, lo cual muestra que sus deudas son mayores que los ingresos de efectivos. Favor Revisar la sección de CONSEJO para poder economizar sus fluidos de efectivos");
             }
-            if(porcentajeActivo > 10){
+            if(porcentajeActivo > 60){
                 $("#exprecion").text("Excelente");
-                $("#mensaje").text("Entradas: Las entradas son excelentes por que sobre pasa  mas del 60% de los ingresos Salidas: Las salidas son menores de los 50% y hace que sea sostenible los gastos del hogar.");
+                $("#mensaje").text("Entradas: Las entradas son excelentes por que sobre pasa  mas del 60% de los ingresos, Las salidas son menores de los 50% y hace que sea sostenible los gastos del hogar. Mantenga siempre utilidades para poder ahorrar.");
             }else if(porcentajeActivo < 60 && porcentajeActivo > 50){
                 $("#exprecion").text("Aceptable");
                 $("#mensaje").text("Entradas: Las entradas estan algo sostenibles, se mantiene en un margen del 50% pero es necesario mejorar las entradas de efectivo: Las salidas son menores de los 50% y hace que sea sostenible los gastos del hogar.");
             }
             else{
                 $("#exprecion").text("No Aceptable");
-                $("#mensaje").text("La parte de la deuda o pasivos es mayor y esto hace que tengamos perdidas y no podamos sostener los pagos y deudas, necesitamos hacer un plan de levantamiento de la economia para poder siempre mantener utilidades al final del mes.");
+                $("#mensaje").text("La parte de la deuda o pasivos es mayor y esto hace que tengamos perdidas y no podamos sostener las salidas, necesitamos hacer un plan de levantamiento economia para poder siempre mantener utilidades al final del mes.");
             }
+            $('html, body').animate({
+                scrollTop: $(".contact").offset().top
+                }, 2000);
             });
         });
         
         $("#btnRefresh").click(function(e){
             e.preventDefault();
             e.stopPropagation();
+            $('html, body').animate({
+                scrollTop: $(".contact").offset().top
+                }, 2000);
             $(".hide").hide("slow");
             $("form").show("slow");
             $(".row").show("slow");
             $(".show").show("slow");
+            $("form")[0].reset();
         });

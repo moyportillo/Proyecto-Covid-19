@@ -1,0 +1,386 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.5;
+}
+
+header{
+    background-color: #03A9F4;
+    color: #ffffff;
+}
+
+header h1{
+    display: block;
+    margin: 0px;
+    padding: 1em 1em 1em 2em;
+    text-align: center;
+}
+
+header h1 a{
+    text-decoration: none;
+    color: #fff;
+}
+
+header nav ul{
+    display: block;
+    padding: 0px;
+    margin: 0px;
+    padding-bottom: 1em;
+    list-style: none;
+    max-height: 100vh;
+    transition: max-height 0.7s ease;
+}
+
+header nav ul.hidden{
+    max-height: 0vh;
+    transition: max-height 0.7s ease;
+}
+
+header nav ul li a{
+    display: block;
+    padding: 16px 8px;
+    color: #ffffff;
+    text-decoration: none;
+    text-align: center;
+    transition: background-color 0.7s ease, color 0.7s ease;
+}
+
+header nav ul li a:hover{
+    background-color: #FF5722;
+    color: #212121;
+    border-radius: 5%;
+    transition: background-color 0.7s ease, color 0.7s ease;
+}
+
+.hamburguer{
+    display: flex;
+    position: absolute;
+    left: 10%;
+    top: 26px;
+    box-sizing: border-box;
+    width: 64px;
+    height: 64px;
+    padding-top: 1px;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+    background-image: url("../imgs/virus.png");
+    transform: rotate(0deg);
+    transition: transform 0.7s ease;
+    
+}
+
+.move-menu{
+    animation: Movement 6s infinite;
+}
+
+.hero {
+    position: relative;
+    background-image: url(../imgs/hero_peq.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin: 0px;
+    padding: 13em;
+}
+
+.hero h2 {
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.637);
+    text-align: center;
+}
+
+p{
+    text-align: justify;
+}
+
+ul li {
+    text-align: justify;
+    list-style: disc;
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #0288D1;
+    padding: 1em 1em;
+    color: #ffffff;
+}
+
+footer .icon{
+    display: block;
+    font-size: 2em;
+    padding: 0.25em;
+    margin: 0.1em;
+    background-color: #FF5722;
+    color: #fff;
+    text-shadow: 1px 1px 2px #212121;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    box-shadow: 1px 1px 3px #212121;
+    transition: background-color 0.7s ease;
+    text-align: center;
+}
+
+footer .icon:hover {
+    background-color: #C8E6C9;
+    transition: background-color 0.7s ease;
+}
+  
+footer .center {
+    text-align: center;
+    order: 1;
+    padding: 1em;
+}
+  
+footer .social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    text-align: center;
+    order: 2
+}
+
+footer section:nth-child(1) {
+    order: 3;
+}
+  
+footer nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 0px;
+    align-items: center;
+    justify-content: center;
+}
+  
+footer nav ul li {
+    flex-basis: 50%;
+    text-align: center;
+}
+  
+footer nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    line-height: 1.5;
+    text-align: center;
+}
+
+.cardholder{
+    margin: 0px;
+    padding-top: 2em;
+    padding-bottom: 2em;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #ecedef;
+}
+
+[class*=card_]{
+    box-sizing: border-box;
+    padding: 1em;
+}
+
+[class*=card_] h3 {
+    padding: 1em;
+    margin-top: calc(-1em + 1px);
+    margin-left: calc(-1em + 2px);
+    margin-right: calc(-1em + 2px);
+    margin-bottom: 0px;
+    text-align: center;
+  }
+
+.card_0{
+    width: 70%;
+    margin: 1em;
+    background-color: #FFCCBC;
+}
+
+.card_3{
+    width: 70%;
+    margin: 1em;
+    background-color: #BBDEFB;
+}
+
+ul li{
+    list-style: none;
+}
+
+@keyframes Movement {
+    0% {
+        transform: rotate(0deg);
+    }
+    
+    25% {
+        transform: rotate(45deg);
+    }
+    
+    75% {
+        transform: rotate(-45deg);
+    }
+    
+    100% {
+        transform: rotate(0deg);
+    }
+  }
+
+  @media (min-width: 720px){
+    .hamburguer {
+        display: none;
+    }
+
+    header h1 {
+        display: inline-block;
+        text-align: left;
+    }
+
+    header nav {
+        display: inline-block;
+        text-align: right;
+    }
+
+    header nav ul {
+        display: inline-block;
+    }
+
+    header nav ul li {
+        display: inline-block;
+    }
+
+    header nav ul li a{
+        display: inline-block;
+    }
+
+    header nav ul.hidden {
+        max-width: 100vh;
+    }
+    
+
+    .hero h2 {
+        position: absolute;
+        top: 10px;
+        bottom: initial;
+        left: 60px;
+        color: #212121;
+        background-color: rgb(255, 255, 255, 0.5);
+        padding: 2em;
+        font-size: 2.5em;
+        text-align: center;
+    }
+
+    .hero {
+        padding: 12em 7em 35em 7em;
+        background-image: url(../imgs/hero_med.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: top;
+    }
+
+    .card_1{
+        width: 40%;
+        margin: 0em;
+        background-color: #FFCCBC;
+
+    }
+
+    .card_2{
+        width: 40%;
+        margin: 0em;
+        background-color: #BBDEFB;
+
+    }
+
+    .card_4{
+        width: 70%;
+        margin: 0em;
+        background-color: #CFD8DC;
+    }  
+  } 
+
+  @media(min-width: 1020px){
+    
+    header h1{
+        display: inline-block;
+        text-align: center;
+        width: calc(100% - 800px);
+    }
+
+    header nav{
+        display: inline-block;
+        text-align: right;
+        width: auto;
+    }
+
+    header nav ul{
+        display: inline-block;
+    }
+
+    header nav ul li{
+        display: inline-block;
+        font-size: 1.5em;
+    }
+
+    header nav ul li a{
+        display: inline-block;
+    }
+
+    header nav ul.hidden{
+        max-width: 100vh;
+    }
+
+    footer{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #0288D1;
+        padding: 1.5em 1em;
+        color: #fff;
+    }
+
+    footer section{
+        min-width: 30%;
+    }
+
+    footer nav ul {
+        padding-left: 40%;
+    }
+
+    footer nav ul li{
+        flex-basis: 100%;
+        text-align: left;
+    }
+
+    footer section:nth-child(1){
+        order: 1;
+    }
+
+    footer .center{
+        order: 2;;
+    }
+
+    footer .social{
+        flex-direction: row;
+        text-align: center;
+        order: 3;
+    }
+ 
+
+    .hero h2 {
+        position: absolute;
+        top: 10px;
+        bottom: initial;
+        left: 60px;
+        color: #212121;
+        background-color: rgb(255, 255, 255, 0.5);
+        padding: 1em;
+        font-size: 3em;
+        text-align: center;
+    }
+  }
+

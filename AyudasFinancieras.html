@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css"/>
+    <link rel="stylesheet" href="./css/ol.css"/>
+    <link rel="stylesheet" href="./css/acordeon.css"/>
+
+    <title>Ayuda en Linea</title>
+</head>
+<body>
+    <header>
+        <h1><a href="index.html">COVID-19 HN</a></h1>
+        <nav>
+            <ul class="hidden">
+                <li><a href="index.html#area_Info">Informacion</a></li>
+                <li><a href="index.html#area_Mapas">Mapas</a></li>
+                <li><a href="plan_Financiero_Personal.html">Financiero</a></li>
+                <li><a href="AyudasFinancieras.html">Donaciones</a></li>
+        </ul>
+        <section class="hamburguer move-menu">
+            <div></div>
+        </section>
+            </nav>
+    </header>
+    <main>
+        <section class="row_principal">
+            <h2 class="col-sm-12">Ayudas y Donaciones</h2></div>
+        </section>
+        <div class="row">
+            <div class="column side">
+            </div>
+
+        <section class="column middle">
+            
+                     
+        <h1>Formulario Ayudas y Donaciones</h1>
+        <form name="form1" action="AyudasFinancieras.html" onsubmit= "return validateForm()" method="POST">
+            <fieldset>
+                <!--<legend>Datos Generales</legend>-->
+                <label for="txttipoayuda">Tipo de ayuda a Solicitar:</label>
+                <select id="txttipoayuda" name="txttipoayuda">
+                    <option value="NA" selected>Selecciona una opcion</option>
+                    <option value="1">Ayuda Financiera</option>
+                    <option value="2">Ayuda Alimenticia</option>
+                    <option value="3">Donaciones</option>    
+                </select>
+                <br>
+                <br>
+                <label for="txtNombre">Nombre Completo</label>
+                <input type="text" name="txtNombre" id="txtNombre" placeholder="Nombre Completo" />
+                <div id="txtNombreErr" class="error"></div>
+    
+                <br/>
+
+                <label for="txtIdentidad">No. Identidad</label>
+                <input type="text" name="txtIdentidad" id="txtIdentidad" placeholder="0501200235687" />
+                <div id="txtIdentidadErr" class="error"></div>
+                <br/>
+
+                <label for="txtEmail">Correo Electrónico</label>
+                <input type="email" name="txtEmail" id="txtEmail" placeholder="correo@mail.com" />
+                <div id="txtEmailErr" class="error"></div>
+                <br/>
+    
+                <label for="txtPhone">Celular</label>
+                <input type="tel" name="txtPhone" id="txtPhone" placeholder="+5049999-9999" />
+                <div id="txtPhoneErr" class="error"></div>
+                <br/>
+    
+                <label for="intEdad">Edad</label>
+                <input type="number" name="intEdad" id="intEdad" placeholder="Ingrese Edad" min="0" max="140" step="1" />
+                <div id="intEdadErr" class="error"></div>
+                <br/>
+
+                <label for="txtRazon">Motivo por el cual solicita ayuda:</label>
+                <textarea id="txtRazon" name="txtRazon" rows="10" cols="60" placeholder="Exponga su situacion para ser beneficiado con la ayuda"></textarea>
+
+            </fieldset>
+            <input type="submit" value="Enviar">
+        <section>
+            <p>Links externos para ayuda:</p>
+            <a href="http://bonounico.ceniss.gob.hn/">Bono Unico Gobierno</a><br>
+            <a href="https://www.finca.hn/covid-19/">Financiera FINCA</a><br>
+        </section>
+        </form>
+    </section>      
+       <br>       
+    </main>
+    <footer>
+        <section>
+            <nav>
+                <ul>
+                    <li><a href="index.html#area_Info">Informacion</a></li>
+                    <li><a href="index.html#area_Mapas">Mapas</a></li>
+                    <li><a href="plan_Financiero_Personal.html">Financiero</a></li>
+                    <li><a href="AyudasFinancieras.html">Donaciones</a></li>
+                </ul>
+            </nav>
+        </section>
+        <section class="center">
+            <span>Derechos Reservados &copy; 2020</span>
+        </section>
+        <section class="social">
+            <a href="https://www.facebook.com/saludhn" class="icon"><img src="imgs/facebook.png" alt="Icon facebook"></a>
+            <a href="https://twitter.com/presidencia_hn?lang=en" class="icon"><img src="imgs/twitter.png" alt="Icon Twitter"></a>
+            <a href="https://www.instagram.com/presidencia_hn/" class="icon"><img src="imgs/instagram.png" alt="Icon Instagram"></a>
+            <a href="http://www.salud.gob.hn/site/" class="icon"><img src="imgs/gato.png" alt="Icon Github"></a>
+        </section>
+    </footer> 
+    <script src="js/controlador.js"></script>
+    <script src="js/validation.js"></script>
+    <!--<script src="js/desplegable.js"></script>-->
+    <script>
+        var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+    } else {
+      panel.style.display = "block";
+    }
+  });
+}
+    </script>
+
+</body>
+</html>

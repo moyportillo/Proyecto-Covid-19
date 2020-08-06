@@ -12,13 +12,13 @@
 }
 
 .active, .accordion:hover {
-  background-color: #8c8cd3 ; 
+  background-color: #00BCD4 ; 
 }
 
 .panel {
   padding: 0 18px;
   display: none;
-  background-color: #8c8cd3;
+  background-color: #00BCD4;
   overflow: hidden;
   
 }
@@ -32,5 +32,9 @@
   color:black;
   font-size:17px;
   list-style-type: disc;
+}
+
+.titulo-ayuda{
+  padding: 2em;
 }
 
